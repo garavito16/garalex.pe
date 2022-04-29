@@ -27,7 +27,7 @@
 }
 
 .about_me {
-    background-image: url("/img/covers/portada_about_me.jpg");
+    background-image: url("./../img/covers/portada_about_me.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -63,19 +63,19 @@
 } */
 
 .portada_education {
-    background-image: url("/img/covers/portada_education.jpg");
+    background-image: url("./../img/covers/portada_education.jpg");
 }
 
 .portada_experience {
-    background-image: url("/img/covers/portada_experience.jpg");
+    background-image: url("./../img/covers/portada_experience.jpg");
 }
 
 .portada_projects {
-    background-image: url("/img/covers/portada_projects.jpg");
+    background-image: url("./../img/covers/portada_projects.jpg");
 }
 
 .portada_tecnologies {
-    background-image: url("/img/covers/portada_tecnologies.jpg");
+    background-image: url("./../img/covers/portada_tecnologies.jpg");
 }
 
 /* .portada_volunteering,  */
@@ -87,7 +87,7 @@
 
 
 .contact_me {
-    background-image: url("/img/covers/portada_about_me.jpg");
+    background-image: url("./../img/covers/portada_about_me.jpg");
     background-repeat: no-repeat;
     padding: 3.0em;
     /* height: 50vh; */
