@@ -1,0 +1,638 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.title {
+    font-family: 'Righteous', cursive;
+}
+
+.subtitle, .item {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitle_2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*estilos para moviles*/
+
+.about_me > .contenido {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.about_me {
+    background-image: url("/img/covers/portada_about_me.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #FFF;
+    padding: 1.0em;
+    color: white;
+    font-size: 1.1em;
+}
+
+* > .contenido > .titulo {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.about_me > .contenido > .parrafos {
+    margin-top: 2.5em;
+}
+
+.about_me > .contenido > .parrafos > .texto {
+    text-align: center;
+    margin: 1.0em 0;
+    font-size: 1.0em;
+}
+
+.about_me > .contenido > .imagenes > * > img {
+    border-radius: 50%;
+    width: 45%;
+    margin: 2%;
+}
+
+/* .portada_volunteering {
+    background-image: url("/img/covers/portada_volunteering.jpg");
+} */
+
+.portada_education {
+    background-image: url("/img/covers/portada_education.jpg");
+}
+
+.portada_experience {
+    background-image: url("/img/covers/portada_experience.jpg");
+}
+
+.portada_projects {
+    background-image: url("/img/covers/portada_projects.jpg");
+}
+
+.portada_tecnologies {
+    background-image: url("/img/covers/portada_tecnologies.jpg");
+}
+
+/* .portada_volunteering,  */
+.portada_education, .portada_experience, .portada_projects, .portada_tecnologies {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+}
+
+
+.contact_me {
+    background-image: url("/img/covers/portada_about_me.jpg");
+    background-repeat: no-repeat;
+    padding: 3.0em;
+    /* height: 50vh; */
+}
+
+.contact_me > .contenido > .imagenes {
+    width: 20%;
+    margin: 2.0em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_me > .contenido > .imagenes > img {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.titulo_contenido {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .tecnologias > * {
+    display: flex;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .tecnologias > * > div {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1.0em;
+    width: 5.3em;
+    margin: 0.5em;
+    flex: 1;
+    
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .tecnologias > * > div > img{
+    width: 100%;
+}
+
+.oculto {
+    border: 0px solid black !important;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .logo_project{
+    /* border: 1px solid black;
+    border-radius: 50%; */
+    width: 12.0em;
+    height: 12.0em;
+    padding: 1.0em;
+    margin: 2.0em auto;
+    margin-bottom: 0em;
+}
+.projects > .contenido_projects > .seccion_projects > *  > * > .logo_project > img{
+    width: 100%;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .titulo_project {
+    text-align: center;
+    margin-bottom: 1.0em;
+    font-size: 1.7em;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * > .descripcion_project {
+    text-align: center;
+    margin : 1.0em;
+}
+
+.projects > .contenido_projects > .seccion_projects > *  > * {
+    background-color: #CCC;
+    width: 80%;
+    margin: 2.0em auto;
+    border-radius: 1.5em;
+    padding: 0.5em;
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+}
+
+
+
+
+
+
+.experience > .contenido_experience > .contenido, 
+.education > .contenido_education > .contenido {
+    padding: 1.5em;
+    padding-top: 0em;
+}
+
+.experience > .contenido_experience > .contenido > *,
+.education > .contenido_education > .contenido > * {
+    border-left: 2px dashed black;
+}
+
+.experience > .contenido_experience > .contenido > * > .seccion_titulo > .titulo_anio {
+    padding: 0.5em;
+    padding-right: 37.3px;
+    border-bottom: 2px dashed black;
+    display: inline;
+}
+
+.education > .contenido_education > .contenido > .anio_1 > .seccion_titulo > .titulo_anio {
+    padding: 0.5em;
+    border-bottom: 2px dashed black;
+    display: inline;
+}
+
+.education > .contenido_education > .contenido > .anio_2 > .seccion_titulo > .titulo_anio {
+    padding: 0.5em;
+    padding-right: 45.3px;
+    border-bottom: 2px dashed black;
+    display: inline;
+}
+
+.experience > .contenido_experience > .contenido > .anio_3 > .seccion_titulo > .titulo_anio {
+    padding-right: 0em;
+}
+
+.experience > .contenido_experience > .contenido > * > .seccion_contenido > .imagen_experience > img,
+.education > .contenido_education > .contenido > * > .seccion_contenido > .imagen_education > img{
+    margin: 2.0em 0;
+    display: block;
+    margin: 2.0em auto;
+}
+
+.experience > .contenido_experience > .contenido > * > .seccion_contenido > 
+.contenido_experience > .titulo_experience > *,
+.education > .contenido_education > .contenido > * > .seccion_contenido > 
+.contenido_education > .titulo_education > * {
+    padding-bottom: 1.2em;
+    padding-left: 0.5em;
+    text-align: center;
+}
+
+
+.experience > .contenido_experience > .contenido > * > .seccion_contenido > 
+.contenido_experience > .titulo_experience > ul,
+.education > .contenido_education > .contenido > * > .seccion_contenido > 
+.contenido_education > .titulo_education > .descripcion {
+    text-align: justify;
+    padding: 1em 3.0em;
+}
+
+.education > .contenido_education > .contenido > * > .seccion_contenido {
+    display: block;
+    width: 100%;
+}
+
+.experience > .contenido_experience > .contenido > *,
+.education > .contenido_education > .contenido > * {
+    display: flex;
+}
+
+
+/* .volunteering > .contenido_volunteering > .contenido > .texto {
+    margin: 0 2.0em;
+    text-align: justify;
+}
+
+.volunteering > .contenido_volunteering > .contenido > .imagen > img {
+    display: block;
+    margin: 2.0em auto;
+    width: 50%;
+} */
+
+.boton, .img_maximizar {
+    transition: 500ms;
+}
+
+
+
+.tecnologies > .contenido_tecnologies {
+    width: 100%;
+    margin: 2.0em auto;
+}
+
+.tecnologies > .contenido_tecnologies > .contenido > .img_tecnologies{
+    display: flex;
+    margin-bottom: 2.0em;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecnologies > .contenido_tecnologies > .contenido > .img_tecnologies > div{
+    width: 100px;
+    margin: 0 0.2em;
+}
+
+.tecnologies > .contenido_tecnologies > .contenido > .img_tecnologies > div > img{
+    width: 100%;
+}
+
+
+/*Estilos para el desplazamiento del menu*/
+
+.checkbox {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top : 0;
+    z-index: 10;
+    margin: 1.0em;
+    background-color: red;
+}
+
+.header-button {
+    width: 3rem;
+    height: 0.4rem;
+    background: red;
+    position: absolute;
+    top: 1.0rem;
+    transition: all 0.2s;
+}
+
+.header-button::before,
+.header-button::after {
+    content: "";
+    width: 3rem;
+    height: 0.4rem;
+    background: red;
+    position: absolute;
+    top: -0.6rem;
+    transition: all 0.2s;
+}
+
+.header-button::after {
+    top: 0.6rem;
+}
+
+.checkbox:checked ~ .perfil {
+    /* background: red; */
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.checkbox:checked + header .header-container label .header-button {
+    background: none;
+}
+.checkbox:checked + header .header-container label .header-button::before {
+    transform: rotate(35deg);
+    top: 0;
+}
+.checkbox:checked + header .header-container label .header-button::after {
+    transform: rotate(-35deg);
+    top: 0;
+}
+
+
+/* Estilos para menú */
+
+.perfil {
+    /* z-index: 10; */
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    left: -100%;
+    transition: all 1.0s;
+    top: 0;
+}
+
+.perfil > .contenido {
+    width: 100%;
+    background-color: cornflowerblue;
+    padding: 1.5em;
+    height: 100vh;
+}
+
+.perfil > .contenido > .datos {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.perfil > .contenido > .datos > .datitos {
+    margin : 2.0em 0;
+}
+
+.perfil > .contenido > .datos > .datitos > .name {
+    margin-bottom: 0.8em;
+}
+
+.perfil > .contenido > .datos > .foto_perfil {
+    margin : 0em 5.0em;
+}
+
+.perfil > .contenido > .datos > .foto_perfil > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.perfil > .contenido > .menu > ul {
+    list-style: none;
+}
+
+.perfil > .contenido > .menu > ul > li > a{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.perfil > .contenido > .menu > ul > li > a > img{
+    width: 2.5em;
+}
+
+.perfil > .contenido > .menu > ul > li > a > span{
+    padding-left: 1.0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*estilos para tabletas*/
+@media only screen and (min-width:560px) {
+    .about_me > .contenido > .imagenes {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact_me > .contenido > .imagenes {
+        width: 80%;
+        margin-left: 10%;
+        flex-direction: row;
+    }
+    
+    .contact_me > .contenido > .imagenes > img {
+        width: 10%;
+        margin: 4.5%;
+    }
+
+    .projects > .contenido_projects > .seccion_projects > *  > * > .tecnologias,
+    .projects > .contenido_projects > .seccion_projects > *  > * > .descripcion_project {
+        /* width: 60%;
+        margin-left: 20%; */
+        display: block;
+        margin: 2.0em 5.0em;
+    }
+
+    .education > .contenido_education > .contenido > * > .seccion_contenido > .imagen_education > img{
+        width: 30%;
+        margin: 2.0em 0;
+        margin-left: 32%;
+    }
+
+    .education > .contenido_education > .contenido > * > .seccion_contenido > .imagen_education > img{
+        width: 30%;
+        margin: 2.0em 0;
+        margin-left: 32%;
+    }
+
+    .tecnologies > .contenido_tecnologies > .contenido > .img_tecnologies > div{
+        width: 150px;
+        margin: 0 0.4em;
+    }
+
+    /*estilos para menu tablets*/
+    .perfil {
+        left: -50%;
+    }
+    
+    .perfil > .contenido {
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+/*estilos para computadoras*/
+@media only screen and (min-width: 980px) {
+    .about_me > .contenido {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .about_me {
+        padding: 3.0em;
+    }
+
+    .about_me > .contenido > .imagenes {
+        width: 100%;
+        display: flex;
+    }
+
+    .about_me > .contenido > .imagenes > * {
+        flex: 1;
+    }
+
+    /* .portada_volunteering,  */
+    .portada_education, .portada_experience, .portada_projects, .portada_tecnologies {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .about_me > .contenido > .parrafos > .texto {
+        margin: 2.0em 0;
+    }
+    
+    * > .contenido > .titulo {
+        font-size: 3.0em;
+    }
+
+    .about_me > .contenido > .parrafos > .texto {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .contact_me {
+        background-size: 100%;
+        /* background-attachment: fixed; */
+        background-position: center;
+    }
+
+    .contact_me > .contenido > .imagenes {
+        width: 50%;
+        margin: 5em auto;
+    }
+    
+    .contact_me > .contenido > .imagenes > img {
+        width: 100%;
+        margin: 4.5%;
+    }
+
+    .projects > .contenido_projects > .seccion_projects > * {
+        display: flex;
+    }
+
+    .projects > .contenido_projects > .seccion_projects > *  > * {
+        width: 40%;
+        margin-left: 6%;
+    }
+
+
+
+
+    .experience > .contenido_experience > .contenido > * > .seccion_contenido {
+        display: flex;
+    }
+
+    .experience > .contenido_experience > .contenido > * > .seccion_contenido > .contenido_experience{
+        flex: 2;
+    }
+
+    .experience > .contenido_experience > .contenido > * > .seccion_contenido > .imagen_experience{
+        flex: 1;
+    }
+
+    .experience > .contenido_experience {
+        width: 70%;
+        margin-left: 13%;
+    }
+
+    .experience > .contenido_experience > .contenido > * {
+        padding-bottom: 3.0em;
+    }
+
+    .education > .contenido_education > .contenido > * > .seccion_contenido {
+        display: flex;
+    }
+
+    .education > .contenido_education > .contenido > * > .seccion_contenido > .contenido_education{
+        flex: 2;
+    }
+
+    .education > .contenido_education > .contenido > * > .seccion_contenido > .imagen_education{
+        flex: 1;
+    }
+
+    .education > .contenido_education {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .education > .contenido_education > .contenido > * {
+        padding-bottom: 3.0em;
+    }
+
+    /* .volunteering > .contenido_volunteering {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .volunteering > .contenido_volunteering > .contenido {
+        display: flex;
+        
+    }
+
+    .volunteering > .contenido_volunteering > .contenido > .texto {
+        flex : 2;
+        margin: auto 2em;
+    }
+
+    .volunteering > .contenido_volunteering > .contenido > .imagen {
+        flex : 1;
+    }
+
+    .volunteering > .contenido_volunteering > .contenido > .imagen > img{
+        width: 250px;
+        margin: 0em;
+    }
+
+    .volunteering {
+        margin-bottom: 4.0em;
+    } */
+
+
+    /*estilos para menu computadoras*/
+    .perfil {
+        left: -30%;
+    }
+    
+    .perfil > .contenido {
+        width: 30%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
