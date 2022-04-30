@@ -240,10 +240,15 @@
     width: 100%;
 }
 
-.experience > .contenido_experience > .contenido > *,
+.experience > .contenido_experience > .contenido > * > .seccion_contenido,
+.education > .contenido_education > .contenido > * > .seccion_contenido {
+    margin-top: 1.5em;
+}
+
+/* .experience > .contenido_experience > .contenido > *,
 .education > .contenido_education > .contenido > * {
     display: flex;
-}
+} */
 
 
 /* .volunteering > .contenido_volunteering > .contenido > .texto {
@@ -568,6 +573,11 @@ header {
         display: flex;
     }
 
+    .experience > .contenido_experience > .contenido > *,
+    .education > .contenido_education > .contenido > * {
+        display: flex;
+    }
+
     .experience > .contenido_experience > .contenido > * > .seccion_contenido > .contenido_experience{
         flex: 2;
     }
@@ -588,6 +598,8 @@ header {
     .education > .contenido_education > .contenido > * > .seccion_contenido {
         display: flex;
     }
+
+    
 
     .education > .contenido_education > .contenido > * > .seccion_contenido > .contenido_education{
         flex: 2;
