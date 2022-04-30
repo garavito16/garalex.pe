@@ -292,13 +292,13 @@ header {
     top : 0;
     z-index: 10;
     margin: 1.0em;
-    background-color: red;
+    background-color: white;
 }
 
 .header-button {
     width: 3rem;
     height: 0.4rem;
-    background: red;
+    background: white;
     position: absolute;
     top: 1.0rem;
     transition: all 0.2s;
@@ -309,7 +309,7 @@ header {
     content: "";
     width: 3rem;
     height: 0.4rem;
-    background: red;
+    background: white;
     position: absolute;
     top: -0.6rem;
     transition: all 0.2s;
@@ -320,7 +320,7 @@ header {
 }
 
 .checkbox:checked ~ .perfil {
-    /* background: red; */
+    /* background: white; */
     left: 0;
     top: 0;
     z-index: 9;
@@ -350,11 +350,15 @@ header {
     left: -100%;
     transition: all 1.0s;
     top: 0;
+    color: white;
 }
 
 .perfil > .contenido {
     width: 100%;
-    background-color: cornflowerblue;
+    background-image: url("./../img/covers/portada_perfil.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 1.5em;
     height: 100vh;
 }
@@ -373,12 +377,17 @@ header {
 }
 
 .perfil > .contenido > .datos > .foto_perfil {
-    margin : 0em 5.0em;
+    margin : 0em 3.5em;
 }
 
 .perfil > .contenido > .datos > .foto_perfil > img{
     width: 100%;
     border-radius: 50%;
+}
+
+.perfil > .contenido > .menu {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .perfil > .contenido > .menu > ul {
@@ -398,6 +407,7 @@ header {
 
 .perfil > .contenido > .menu > ul > li > a > span{
     padding-left: 1.0em;
+    color: white;
 }
 
 
@@ -460,11 +470,12 @@ header {
 
     /*estilos para menu tablets*/
     .perfil {
-        left: -50%;
+        left: -40%;
+        width: 30%;
     }
     
     .perfil > .contenido {
-        width: 50%;
+        width: 100%;
     }
 
 }
@@ -616,11 +627,12 @@ header {
 
     /*estilos para menu computadoras*/
     .perfil {
-        left: -30%;
+        left: -25%;
+        width: 20%;
     }
     
     .perfil > .contenido {
-        width: 30%;
+        width: 100%;
     }
 
 
