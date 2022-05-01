@@ -26,6 +26,27 @@
     margin-left: 5%;
 }
 
+.initial {
+    background-image: url("./../img/covers/portada_initial.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #FFF;
+    color: white;
+    font-size: 5vw;
+    height: 110vh;
+    text-align: center;
+    width: 100%;
+    display: table;
+}
+
+.initial > .titulo {
+    /* display: block;
+    margin: auto 0; */
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .about_me {
     background-image: url("./../img/covers/portada_about_me.jpg");
     background-repeat: no-repeat;
@@ -329,11 +350,12 @@ header {
 }
 
 .checkbox:checked ~ .perfil {
-    /* background: white; */
+    background: white;
     left: 0;
     top: 0;
     z-index: 9;
 }
+
 
 .checkbox:checked + header .header-container label .header-button {
     background: none;
