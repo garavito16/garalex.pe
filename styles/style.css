@@ -512,9 +512,16 @@ header {
     justify-content: center;
     height: 100vmax;
     align-items: center;
-    
 }
 
+.initial>.title>*{
+    z-index: 0;
+}
+
+.about_me {
+    z-index: 10 !important;
+    position: relative;
+}
 
 .letra_G, .letra_A_2 {
     -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
