@@ -69,7 +69,7 @@
 
 .about_me>.contenido>.parrafos>.texto {
     text-align: center;
-    margin: 1.0em 0;
+    margin: 2.0em 0;
     font-size: 1.0em;
 }
 
@@ -108,7 +108,7 @@
 
 
 .contact_me {
-    background-image: url("./../img/covers/portada_about_me.jpg");
+    background-image: url("./../img/covers/portada_initial.jpg");
     background-repeat: no-repeat;
     padding: 3.0em;
     /* height: 50vh; */
@@ -455,11 +455,11 @@ header {
 /* animaciones para la primera parte - Portada*/
 
 header {
-        animation: fadein 4s;
-        -moz-animation: fadein 4s; 
-        -webkit-animation: fadein 4s; 
-        -o-animation: fadein 4s; 
-    } 
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+}
 
 @keyframes fadein {
     from {
@@ -512,12 +512,13 @@ header {
     justify-content: center;
     height: 100vmax;
     align-items: center;
+    
 }
 
 
 .letra_G, .letra_A_2 {
-    -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-right {
@@ -546,8 +547,8 @@ header {
 
 
 .letra_E_2, .letra_X {
-    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-left {
@@ -576,8 +577,8 @@ header {
 
 
 .letra_A, .letra_L, .punto {
-    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-top {
@@ -606,8 +607,8 @@ header {
 
 
 .letra_R, .letra_E, .letra_P {
-    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-bottom {
