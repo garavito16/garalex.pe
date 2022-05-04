@@ -133,6 +133,7 @@
 .titulo_contenido {
     margin: 1em 0;
     text-align: center;
+    font-size: 2.2em;
 }
 
 .projects>.contenido_projects>.seccion_projects>*>*>.tecnologias>* {
@@ -725,6 +726,10 @@ header {
     .about_me>.contenido {
         width: 70%;
         margin-left: 15%;
+    }
+
+    .titulo_contenido {
+        font-size: 3.0em;
     }
 
     .about_me {
