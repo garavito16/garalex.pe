@@ -56,6 +56,7 @@
     padding: 1.0em;
     color: white;
     font-size: 1.1em;
+    
 }
 
 *>.contenido>.titulo {
@@ -525,9 +526,17 @@ header {
     position: relative;
 }
 
+.projects {
+    z-index: 2 ;
+    position: relative;
+    background-color: #FFF;
+}
+
+
 .letra_G, .letra_A_2 {
     -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    
 }
 
 @-webkit-keyframes slide-right {
@@ -677,9 +686,28 @@ header {
 
 
 
+/*Para aplicar el efecto*/
+@keyframes mover {
+    0%{
+        transform: translate();
+    }
+}
 
 
+@keyframes fadein2 {
+    0% {
+        opacity: 0;
+    }
 
+    50% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 
