@@ -14,6 +14,19 @@ Array.prototype.forEach.call(imagenes_maximizar,function(el){
     };
 });
 
+/**al dar click en items de menu cerrar el menu */
+let items_menu = document.getElementsByClassName('item_menu');
+
+Array.prototype.forEach.call(items_menu,function(item){
+    item.addEventListener("click", cerrar);
+});
+
+function cerrar() {
+    document.getElementById('btn-nav').checked = false;
+}
+
+
+/**animaciones a medida que se desplaza por la pagina */
 window.addEventListener('scroll', function(){
     let animacion = document.getElementById('animado');
     let posicionObj = animacion.getBoundingClientRect().top;
