@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .content {
     font-family: 'Ubuntu Mono', monospace;
 }
@@ -327,7 +331,8 @@ header {
 .header-button {
     width: 10vw;
     height: 0.4rem;
-    background: white;
+    /* background: white; */
+    background: linear-gradient(120deg, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
     position: absolute;
     top: 1.0rem;
     transition: all 0.2s;
@@ -339,7 +344,8 @@ header {
     content: "";
     width: 10vw;
     height: 0.4rem;
-    background: white;
+    /* background: white; */
+    background: linear-gradient(120deg, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
     position: absolute;
     top: -0.6rem;
     transition: all 0.2s;
@@ -370,11 +376,6 @@ header {
     transform: rotate(-35deg);
     top: 0;
 }
-
-/* .checkbox:checked + body .container {
-    background-color: red;
-} */
-
 
 
 /* Estilos para menú */
@@ -522,12 +523,12 @@ header {
 }
 
 .about_me {
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
     position: relative;
 }
 
 .projects {
-    z-index: 2 ;
+    /* z-index: 2 ; */
     position: relative;
     background-color: #FFF;
 }
@@ -708,6 +709,7 @@ header {
         opacity: 1;
     }
 }
+
 
 
 

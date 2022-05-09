@@ -66,6 +66,21 @@ window.addEventListener('scroll', function(){
     let animacion17 = document.getElementById('animado17');
     let posicionObj17 = animacion17.getBoundingClientRect().top;
 
+    let animacion18 = document.getElementById('animado18');
+    let posicionObj18 = animacion18.getBoundingClientRect().top;
+
+    let animacion19 = document.getElementById('animado19');
+    let posicionObj19 = animacion19.getBoundingClientRect().top;
+
+    let animacion20 = document.getElementById('animado20');
+    let posicionObj20 = animacion20.getBoundingClientRect().top;
+
+    let animacion21 = document.getElementById('animado21');
+    let posicionObj21 = animacion21.getBoundingClientRect().top;
+
+    let animacion22 = document.getElementById('animado22');
+    let posicionObj22 = animacion22.getBoundingClientRect().top;
+
     let tamañoDePantalla = window.innerHeight;
 
     if(posicionObj < tamañoDePantalla) {
@@ -135,5 +150,27 @@ window.addEventListener('scroll', function(){
     if(posicionObj17 < tamañoDePantalla) {
         animacion17.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
+
+    /** Movimientos de contactame */
+    if(posicionObj18 < tamañoDePantalla) {
+        animacion18.style.animation = 'fadein 4s';
+    }
+
+    if(posicionObj19 < tamañoDePantalla) {
+        animacion19.style.animation = 'fadein 4s';
+    }
+
+    if(posicionObj20 < tamañoDePantalla) {
+        animacion20.style.animation = 'fadein 4s';
+    }
+
+    if(posicionObj21 < tamañoDePantalla) {
+        animacion21.style.animation = 'fadein 4s';
+    }
+
+    if(posicionObj22 < tamañoDePantalla) {
+        animacion22.style.animation = 'fadein 4s';
+    }
+
 
 })
