@@ -41,14 +41,6 @@ html {
     height: 105vh;
     text-align: center;
     width: 100%;
-    /* display: table; */
-}
-
-.initial>.titulo {
-    /* display: block;
-    margin: auto 0; */
-    /*display: table-cell;
-    vertical-align: middle;*/
 }
 
 .about_me {
@@ -540,7 +532,8 @@ header {
 .letra_G, .letra_A_2 {
     -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-    
+    -moz-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -o-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-right {
@@ -567,10 +560,36 @@ header {
     }
 }
 
+@-moz-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-1100px);
+        transform: translateX(-1100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@-o-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-1100px);
+        transform: translateX(-1100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
 
 .letra_E_2, .letra_X {
     -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -moz-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -o-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-left {
@@ -597,10 +616,36 @@ header {
     }
 }
 
+@-moz-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@-o-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
 
 .letra_A, .letra_L, .punto {
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -moz-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -o-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-top {
@@ -627,10 +672,36 @@ header {
     }
 }
 
+@-moz-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100vh);
+        transform: translateY(100vh);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@-o-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100vh);
+        transform: translateY(100vh);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
 
 .letra_R, .letra_E, .letra_P {
     -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -moz-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    -o-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 @-webkit-keyframes slide-bottom {
@@ -657,11 +728,37 @@ header {
     }
 }
 
+@-moz-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@-o-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
 /*animaciones para el menú*/
 
 .header-button {
     -webkit-animation: rotate-center 0.6s ease-in-out 1s both;
     animation: rotate-center 0.6s ease-in-out 1s both;
+    -moz-animation: rotate-center 0.6s ease-in-out 1s both;
+    -o-animation: rotate-center 0.6s ease-in-out 1s both;
 }
 
 @-webkit-keyframes rotate-center {
@@ -688,6 +785,29 @@ header {
     }
 }
 
+@-moz-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 
 
 /*Para aplicar el efecto*/
@@ -696,6 +816,25 @@ header {
         transform: translate();
     }
 }
+
+@-webkit-keyframes mover {
+    0%{
+        transform: translate();
+    }
+}
+
+@-moz-keyframes  mover {
+    0%{
+        transform: translate();
+    }
+}
+
+@-o-keyframes mover {
+    0%{
+        transform: translate();
+    }
+}
+
 
 
 @keyframes fadein2 {
@@ -707,11 +846,54 @@ header {
         opacity: 0;
     }
 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mover {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
 
     100% {
         opacity: 1;
     }
 }
+
+@-moz-keyframes  mover {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mover {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 /* sobre pantalla */
 .pantalla {

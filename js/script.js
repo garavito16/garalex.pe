@@ -218,6 +218,11 @@ window.addEventListener('scroll', function(){
     if(posicionObj22 < tamañoDePantalla) {
         animacion22.style.animation = 'fadein 4s';
     }
+});
 
+/**en caso de cambiar el tamaño de la pantalla */
+window.addEventListener('resize', start);
 
-})
+function start() {
+    contenedor.style.width = "100%";
+}
