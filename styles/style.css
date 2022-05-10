@@ -207,6 +207,7 @@ html {
 .education>.contenido_education>.contenido {
     padding: 1.5em;
     padding-top: 0em;
+    margin-bottom: 2.0em;
 }
 
 .experience>.contenido_experience>.contenido>*,
@@ -243,6 +244,7 @@ html {
     margin: 2.0em 0;
     display: block;
     margin: 2.0em auto;
+    margin-bottom: 0;
 }
 
 .experience>.contenido_experience>.contenido>*>.seccion_contenido>.contenido_experience>.titulo_experience>*,
@@ -752,16 +754,12 @@ header {
         margin: 2.0em 5.0em;
     }
 
+    .experience>.contenido_experience>.contenido>*>.seccion_contenido>.imagen_experience>img,
     .education>.contenido_education>.contenido>*>.seccion_contenido>.imagen_education>img {
         width: 30%;
         margin: 2.0em 0;
         margin-left: 32%;
-    }
-
-    .education>.contenido_education>.contenido>*>.seccion_contenido>.imagen_education>img {
-        width: 30%;
-        margin: 2.0em 0;
-        margin-left: 32%;
+        margin-bottom: 0;
     }
 
     .tecnologies>.contenido_tecnologies>.contenido>.img_tecnologies>div {
@@ -960,6 +958,11 @@ header {
 
     .initial>.title {
         height: 50vmax;
+    }
+
+    .experience>.contenido_experience>.contenido>*>.seccion_contenido>.imagen_experience>img,
+    .education>.contenido_education>.contenido>*>.seccion_contenido>.imagen_education>img {
+        width: 50%;
     }
 
 }
