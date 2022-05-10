@@ -365,6 +365,7 @@ header {
 
 .checkbox:checked+header .header-container label .header-button {
     background: none;
+    overflow: visible;
 }
 
 .checkbox:checked+header .header-container label .header-button::before {
@@ -385,7 +386,7 @@ header {
     width: 75vw;
     height: 100vh;
     position: fixed;
-    z-index: -1;
+    /* z-index: -1; */
     left: -95vw;
     transition: all 1.0s;
     top: 0;
@@ -710,6 +711,12 @@ header {
     }
 }
 
+/* sobre pantalla */
+.pantalla {
+    z-index: 6 !important;
+    position: absolute;
+    background: rgb(0, 0, 0, 0.5);
+}
 
 
 

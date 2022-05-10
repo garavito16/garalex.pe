@@ -15,6 +15,11 @@ Array.prototype.forEach.call(imagenes_maximizar,function(el){
 });
 
 /**al dar click en items de menu cerrar el menu */
+let elemento = document.getElementById('btn-nav');
+let contenedor = document.getElementById('body');
+let container = document.getElementById('container');
+let contrapantalla = document.getElementById('pantalla');
+
 let items_menu = document.getElementsByClassName('item_menu');
 
 Array.prototype.forEach.call(items_menu,function(item){
@@ -22,9 +27,38 @@ Array.prototype.forEach.call(items_menu,function(item){
 });
 
 function cerrar() {
-    document.getElementById('btn-nav').checked = false;
+    elemento.checked = false;
+    contenedor.style.overflow = "visible";
+    container.style.opacity = "1";
+    contrapantalla.style.height = "0vh";
+    contrapantalla.style.width = "0%";
 }
 
+// /**al dar click en la contrapantalla cerrar el menu */
+contrapantalla.addEventListener("click", cerrar);
+
+/**deshabilitar overflow al abrir el menu */
+elemento.addEventListener('change', chequear, false);
+
+function chequear() {
+    
+    let tamanio = document.body.clientWidth;
+    
+    if(elemento.checked){
+        contenedor.style.width = tamanio+"px";
+        contenedor.style.overflow = "hidden";
+        contrapantalla.style.height = "100vh";
+        contrapantalla.style.width = "100%";
+        contrapantalla.style.top =  window.scrollY+"px";
+    }
+    //Si se ha desmarcado se ejecuta el siguiente mensaje.
+    else{
+        contenedor.style.overflow = "visible";
+        container.style.opacity = "1";
+        contrapantalla.style.height = "0vh";
+        contrapantalla.style.width = "0%";
+    }
+}
 
 /**animaciones a medida que se desplaza por la pagina */
 window.addEventListener('scroll', function(){
