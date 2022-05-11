@@ -902,6 +902,10 @@ header {
     background: rgb(0, 0, 0, 0.5);
 }
 
+.img_maximizar:hover {
+    scale: 1.2;
+}
+
 
 
 /*estilos para tabletas*/

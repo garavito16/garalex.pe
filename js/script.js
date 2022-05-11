@@ -1,18 +1,22 @@
 
-function scale(element, value) {
-    element.style.transform = "scale(" + value + ")";
-}
-
-let imagenes_maximizar = document.getElementsByClassName('img_maximizar');
-
-Array.prototype.forEach.call(imagenes_maximizar,function(el){
-    el.onmouseover = function(){
-        scale(this,1.2);
-    };
-    el.onmouseleave = function(){
-        scale(this,1);
-    };
+window.addEventListener("load", function(event) {
+    
 });
+
+// function scale(element, value) {
+//     element.style.transform = "scale(" + value + ")";
+// }
+
+// let imagenes_maximizar = document.getElementsByClassName('img_maximizar');
+
+// Array.prototype.forEach.call(imagenes_maximizar,function(el){
+//     el.onmouseover = function(){
+//         scale(this,1.2);
+//     };
+//     el.onmouseleave = function(){
+//         scale(this,1);
+//     };
+// });
 
 /**al dar click en items de menu cerrar el menu */
 let elemento = document.getElementById('btn-nav');
