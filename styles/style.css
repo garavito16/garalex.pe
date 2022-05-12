@@ -44,16 +44,21 @@ html {
 }
 
 .about_me {
-    /* background-image: url("./../img/covers/portada_about_me.jpg");
-    background-repeat: no-repeat;
+    
+    /* background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
     background-color: #FFF;
     padding: 1.0em;
     color: white;
     font-size: 1.1em; */
     padding: 3.0em;
 }
+
+/* .about_me, .projects, .tecnologies, .experience, .education {
+    background-image: url("./../img/covers/fondo1.jpg");
+    background-size: cover;
+} */
+
 
 *>.contenido>.titulo {
     text-align: center;
@@ -181,7 +186,7 @@ html {
 }
 
 .projects>.contenido_projects>.seccion_projects>*>* {
-    background-color: #CCC;
+    background-color: #EEE;
     width: 80%;
     margin: 2.0em auto;
     border-radius: 1.5em;
