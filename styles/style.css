@@ -44,7 +44,7 @@ html {
 }
 
 .about_me {
-    
+
     /* background-repeat: no-repeat;
     background-position: center center;
     background-color: #FFF;
@@ -817,25 +817,25 @@ header {
 
 /*Para aplicar el efecto*/
 @keyframes mover {
-    0%{
+    0% {
         transform: translate();
     }
 }
 
 @-webkit-keyframes mover {
-    0%{
+    0% {
         transform: translate();
     }
 }
 
-@-moz-keyframes  mover {
-    0%{
+@-moz-keyframes mover {
+    0% {
         transform: translate();
     }
 }
 
 @-o-keyframes mover {
-    0%{
+    0% {
         transform: translate();
     }
 }
@@ -870,7 +870,7 @@ header {
     }
 }
 
-@-moz-keyframes  mover {
+@-moz-keyframes mover {
     0% {
         opacity: 0;
     }
@@ -995,9 +995,7 @@ header {
         font-size: 3.0em;
     }
 
-    .about_me {
-        
-    }
+    .about_me {}
 
     .about_me>.contenido>.imagenes {
         width: 100%;
@@ -1159,4 +1157,38 @@ header {
         width: 50%;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+#wrap-preload {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .5s ease, visibility .5s ease;
+}
+
+#wrap-preload.close {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#wrap-preload>img.gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
 }

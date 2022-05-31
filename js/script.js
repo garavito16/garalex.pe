@@ -1,22 +1,24 @@
 
-window.addEventListener("load", function(event) {
-    
-});
+//Escuchamos el evento load del window y disparamos la funcion que le pasamos como callback (precargaImagenes).
+// window.addEventListener('load', precargaImagenes);
 
-// function scale(element, value) {
-//     element.style.transform = "scale(" + value + ")";
+// function precargaImagenes() {
+
+//     var img1 = new Image();
+//     img1.src = './../img/covers/portada_initial.jpg';
+
+//     var img2 = new Image();
+//     img2.src = './../img/covers/portada_perfil.jpg';
+
+//     //Cuando se terminan de cargar las imágenes se le agrega la clase "close" a #wrap-preload.
+//     var preload = document.getElementById('wrap-preload');
+
+//     preload.classList.add('close');
+
+//     console.log('Sitio cargado!');
+
 // }
 
-// let imagenes_maximizar = document.getElementsByClassName('img_maximizar');
-
-// Array.prototype.forEach.call(imagenes_maximizar,function(el){
-//     el.onmouseover = function(){
-//         scale(this,1.2);
-//     };
-//     el.onmouseleave = function(){
-//         scale(this,1);
-//     };
-// });
 
 /**al dar click en items de menu cerrar el menu */
 let elemento = document.getElementById('btn-nav');
@@ -26,7 +28,7 @@ let contrapantalla = document.getElementById('pantalla');
 
 let items_menu = document.getElementsByClassName('item_menu');
 
-Array.prototype.forEach.call(items_menu,function(item){
+Array.prototype.forEach.call(items_menu, function (item) {
     item.addEventListener("click", cerrar);
 });
 
@@ -45,18 +47,18 @@ contrapantalla.addEventListener("click", cerrar);
 elemento.addEventListener('change', chequear, false);
 
 function chequear() {
-    
+
     let tamanio = document.body.clientWidth;
-    
-    if(elemento.checked){
-        contenedor.style.width = tamanio+"px";
+
+    if (elemento.checked) {
+        contenedor.style.width = tamanio + "px";
         contenedor.style.overflow = "hidden";
         contrapantalla.style.height = "100vh";
         contrapantalla.style.width = "100%";
-        contrapantalla.style.top =  window.scrollY+"px";
+        contrapantalla.style.top = window.scrollY + "px";
     }
     //Si se ha desmarcado se ejecuta el siguiente mensaje.
-    else{
+    else {
         contenedor.style.overflow = "visible";
         container.style.opacity = "1";
         contrapantalla.style.height = "0vh";
@@ -65,7 +67,7 @@ function chequear() {
 }
 
 /**animaciones a medida que se desplaza por la pagina */
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     let animacion = document.getElementById('animado');
     let posicionObj = animacion.getBoundingClientRect().top;
 
@@ -89,13 +91,13 @@ window.addEventListener('scroll', function(){
 
     let animacion8 = document.getElementById('animado8');
     let posicionObj8 = animacion8.getBoundingClientRect().top;
-    
+
     let animacion9 = document.getElementById('animado9');
     let posicionObj9 = animacion9.getBoundingClientRect().top;
 
     let animacion10 = document.getElementById('animado10');
     let posicionObj10 = animacion10.getBoundingClientRect().top;
-    
+
     let animacion11 = document.getElementById('animado11');
     let posicionObj11 = animacion11.getBoundingClientRect().top;
 
@@ -134,92 +136,92 @@ window.addEventListener('scroll', function(){
 
     let tamañoDePantalla = window.innerHeight;
 
-    if(posicionObj < tamañoDePantalla) {
+    if (posicionObj < tamañoDePantalla) {
         animacion.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj2 < tamañoDePantalla) {
+    if (posicionObj2 < tamañoDePantalla) {
         animacion2.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both';
     }
 
-    if(posicionObj3 < tamañoDePantalla) {
+    if (posicionObj3 < tamañoDePantalla) {
         animacion3.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both';
     }
 
-    if(posicionObj4 < tamañoDePantalla) {
+    if (posicionObj4 < tamañoDePantalla) {
         animacion4.style.animation = 'slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both';
     }
 
-    if(posicionObj5 < tamañoDePantalla) {
+    if (posicionObj5 < tamañoDePantalla) {
         animacion5.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both';
     }
 
-    if(posicionObj6 < tamañoDePantalla) {
+    if (posicionObj6 < tamañoDePantalla) {
         animacion6.style.animation = 'slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both';
     }
 
-    if(posicionObj7 < tamañoDePantalla) {
+    if (posicionObj7 < tamañoDePantalla) {
         animacion7.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj8 < tamañoDePantalla) {
+    if (posicionObj8 < tamañoDePantalla) {
         animacion8.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj9 < tamañoDePantalla) {
+    if (posicionObj9 < tamañoDePantalla) {
         animacion9.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj10 < tamañoDePantalla) {
+    if (posicionObj10 < tamañoDePantalla) {
         animacion10.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj11 < tamañoDePantalla) {
+    if (posicionObj11 < tamañoDePantalla) {
         animacion11.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
-    
-    if(posicionObj12 < tamañoDePantalla) {
+
+    if (posicionObj12 < tamañoDePantalla) {
         animacion12.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj13 < tamañoDePantalla) {
+    if (posicionObj13 < tamañoDePantalla) {
         animacion13.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj14 < tamañoDePantalla) {
+    if (posicionObj14 < tamañoDePantalla) {
         animacion14.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj15 < tamañoDePantalla) {
+    if (posicionObj15 < tamañoDePantalla) {
         animacion15.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj16 < tamañoDePantalla) {
+    if (posicionObj16 < tamañoDePantalla) {
         animacion16.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
-    if(posicionObj17 < tamañoDePantalla) {
+    if (posicionObj17 < tamañoDePantalla) {
         animacion17.style.animation = 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
     /** Movimientos de contactame */
-    if(posicionObj18 < tamañoDePantalla) {
+    if (posicionObj18 < tamañoDePantalla) {
         animacion18.style.animation = 'fadein 4s';
     }
 
-    if(posicionObj19 < tamañoDePantalla) {
+    if (posicionObj19 < tamañoDePantalla) {
         animacion19.style.animation = 'fadein 4s';
     }
 
-    if(posicionObj20 < tamañoDePantalla) {
+    if (posicionObj20 < tamañoDePantalla) {
         animacion20.style.animation = 'fadein 4s';
     }
 
-    if(posicionObj21 < tamañoDePantalla) {
+    if (posicionObj21 < tamañoDePantalla) {
         animacion21.style.animation = 'fadein 4s';
     }
 
-    if(posicionObj22 < tamañoDePantalla) {
+    if (posicionObj22 < tamañoDePantalla) {
         animacion22.style.animation = 'fadein 4s';
     }
 });
