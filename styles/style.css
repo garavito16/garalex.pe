@@ -523,7 +523,7 @@ header {
 }
 
 .about_me {
-    /* z-index: 1 !important; */
+    background-color: #FFF;
     position: relative;
 }
 

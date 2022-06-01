@@ -104,6 +104,9 @@ window.addEventListener('scroll', function () {
     let animacion12 = document.getElementById('animado12');
     let posicionObj12 = animacion12.getBoundingClientRect().top;
 
+    let animacion23 = document.getElementById('animado23');
+    let posicionObj23 = animacion23.getBoundingClientRect().top;
+
     let animacion13 = document.getElementById('animado13');
     let posicionObj13 = animacion13.getBoundingClientRect().top;
 
@@ -182,6 +185,10 @@ window.addEventListener('scroll', function () {
 
     if (posicionObj12 < tamañoDePantalla) {
         animacion12.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
+    }
+
+    if (posicionObj23 < tamañoDePantalla) {
+        animacion23.style.animation = 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both, fadein2 2s';
     }
 
     if (posicionObj13 < tamañoDePantalla) {
