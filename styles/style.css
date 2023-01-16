@@ -65,25 +65,25 @@ html {
     font-size: 2.2em;
 }
 
-.about_me>.contenido>.parrafos {
+.about_me>.contenido>.info>.parrafos {
     margin-top: 2.5em;
 }
 
-.about_me>.contenido>.parrafos>.texto {
+.about_me>.contenido>.info>.parrafos>.texto {
     text-align: center;
     margin: 2.0em 0;
     font-size: 1.0em;
 }
 
-.about_me>.contenido>.imagenes>*>img {
+.about_me>.contenido>.info>.imagenes>*>img {
     border-radius: 50%;
     width: 45%;
     margin: 2%;
 }
 
-/* .portada_volunteering {
-    background-image: url("/img/covers/portada_volunteering.jpg");
-} */
+.portada_volunteering {
+    background-image: url("./../img/covers/portada_volunteering.jpg");
+}
 
 .portada_education {
     background-image: url("./../img/covers/portada_education.jpg");
@@ -101,10 +101,10 @@ html {
     background-image: url("./../img/covers/portada_tecnologies.jpg");
 }
 
-/* .portada_volunteering,  */
-.portada_education, .portada_experience, .portada_projects, .portada_tecnologies {
+.portada_education, .portada_experience, .portada_projects, .portada_tecnologies, .portada_volunteering {
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     height: 30vh;
 }
 
@@ -232,7 +232,8 @@ html {
     display: inline;
 }
 
-.experience>.contenido_experience>.contenido>.anio_3>.seccion_titulo>.titulo_anio {
+.experience>.contenido_experience>.contenido>.anio_3>.seccion_titulo>.titulo_anio,
+.experience>.contenido_experience>.contenido>.anio_4>.seccion_titulo>.titulo_anio {
     padding-right: 0em;
 }
 
@@ -268,13 +269,7 @@ html {
     margin-top: 1.5em;
 }
 
-/* .experience > .contenido_experience > .contenido > *,
-.education > .contenido_education > .contenido > * {
-    display: flex;
-} */
-
-
-/* .volunteering > .contenido_volunteering > .contenido > .texto {
+.volunteering > .contenido_volunteering > .contenido > .texto {
     margin: 0 2.0em;
     text-align: justify;
 }
@@ -283,7 +278,7 @@ html {
     display: block;
     margin: 2.0em auto;
     width: 50%;
-} */
+}
 
 .boton, .img_maximizar {
     transition: 500ms;
@@ -915,7 +910,7 @@ header {
 
 /*estilos para tabletas*/
 @media only screen and (min-width:560px) {
-    .about_me>.contenido>.imagenes {
+    .about_me>.contenido>.info>.imagenes {
         width: 80%;
         margin: 0 auto;
     }
@@ -983,7 +978,6 @@ header {
 
 
 
-
 /*estilos para computadoras*/
 @media only screen and (min-width: 980px) {
     .about_me>.contenido {
@@ -995,19 +989,16 @@ header {
         font-size: 3.0em;
     }
 
-    .about_me {}
-
-    .about_me>.contenido>.imagenes {
+    .about_me>.contenido>.info>.imagenes {
         width: 100%;
         display: flex;
     }
 
-    .about_me>.contenido>.imagenes>* {
+    .about_me>.contenido>.info>.imagenes>* {
         flex: 1;
     }
 
-    /* .portada_volunteering,  */
-    .portada_education, .portada_experience, .portada_projects, .portada_tecnologies {
+    .portada_education, .portada_experience, .portada_projects, .portada_tecnologies, .portada_volunteering {
         background-attachment: fixed;
         background-repeat: no-repeat;
         height: 50vh;
@@ -1015,7 +1006,7 @@ header {
         background-position: center;
     }
 
-    .about_me>.contenido>.parrafos>.texto {
+    .about_me>.contenido>.info>.parrafos>.texto {
         margin: 2.0em 0;
     }
 
@@ -1023,11 +1014,11 @@ header {
         font-size: 3.0em;
     }
 
-    .about_me>.contenido>.parrafos>.texto {
+    .about_me>.contenido>.info>.parrafos>.texto {
         font-size: 1.1em;
     }
 
-    .about_me>.contenido>.parrafos>.texto>.resaltado {
+    .about_me>.contenido>.info>.parrafos>.texto>.resaltado {
         font-weight: bold;
     }
 
@@ -1061,6 +1052,11 @@ header {
 
     .experience>.contenido_experience>.contenido>*>.seccion_contenido {
         display: flex;
+        flex: 7;
+    }
+
+    .experience>.contenido_experience>.contenido>*>.seccion_titulo {
+        flex: 1;
     }
 
     .experience>.contenido_experience>.contenido>*,
@@ -1108,7 +1104,7 @@ header {
         padding-bottom: 3.0em;
     }
 
-    /* .volunteering > .contenido_volunteering {
+    .volunteering > .contenido_volunteering {
         width: 70%;
         margin-left: 15%;
     }
@@ -1134,7 +1130,7 @@ header {
 
     .volunteering {
         margin-bottom: 4.0em;
-    } */
+    }
 
 
     /*estilos para menu computadoras*/
@@ -1158,15 +1154,6 @@ header {
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 #wrap-preload {
     position: fixed;
